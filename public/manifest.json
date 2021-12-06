@@ -1,0 +1,42 @@
+{
+  "Actions": [
+    {
+      "Icon": "favicon",
+      "Name": "Monitor",
+      "States": [
+        {
+          "Image": "favicon",
+          "TitleAlignment": "bottom",
+          "FontSize": "11"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "Tooltip": "Check the status of you GitHub Actions.",
+      "UUID": "rocks.rohmer.chalet.monitor.action"
+    }
+  ],
+  "SDKVersion": 2,
+  "Author": "Matthias Rohmer",
+  "PropertyInspectorPath": "property-inspector.html",
+  "Category": "Chalet",
+  "CategoryIcon": "favicon",
+  "CodePath": "plugin.html",
+  "Description": "Control your chalet.",
+  "Name": "Chalet",
+  "Icon": "favicon",
+  "URL": "https://m.rohmer.rocks",
+  "Version": "1.6.0",
+  "OS": [
+    {
+      "Platform": "mac",
+      "MinimumVersion": "10.11"
+    },
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "Software": {
+    "MinimumVersion": "4.1"
+  }
+}

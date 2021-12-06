@@ -1,0 +1,35 @@
+{
+  "name": "@rohmer/chalet-streamdeck",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "concurrently 'yarn build:plugin' 'yarn build:property-inspector'",
+    "build:plugin": "rollup -c rollup.plugin.config.js",
+    "build:property-inspector": "rollup -c rollup.property-inspector.config.js",
+    "watch": "concurrently 'yarn watch:plugin' 'yarn watch:property-inspector'",
+    "watch:plugin": "yarn build:plugin -w",
+    "watch:property-inspector": "yarn build:property-inspector -w",
+    "check": "svelte-check --tsconfig ./tsconfig.json"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-node-resolve": "^11.0.0",
+    "@rollup/plugin-typescript": "^8.0.0",
+    "@tsconfig/svelte": "^2.0.0",
+    "concurrently": "^6.4.0",
+    "rollup": "^2.3.4",
+    "rollup-plugin-css-only": "^3.1.0",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-svelte": "^7.0.0",
+    "rollup-plugin-terser": "^7.0.0",
+    "svelte": "^3.0.0",
+    "svelte-check": "^2.0.0",
+    "svelte-preprocess": "^4.0.0",
+    "tslib": "^2.0.0",
+    "typescript": "^4.0.0"
+  },
+  "dependencies": {
+    "rxjs": "^7.4.0",
+    "sirv-cli": "^1.0.0"
+  }
+}
